@@ -1,0 +1,14 @@
+package {2};
+import android.content.Context;
+import android.content.Intent;
+
+import {0}.base.ui.XActivity;
+
+public class {1}{3} extends XActivity<{1}UI,{1}DE,{1}VA> {
+
+    public static void goTo(Context context){
+        Intent intent = new Intent(context,{1}{3}.class);
+        context.startActivity(intent);
+    }
+
+}

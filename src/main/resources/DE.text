@@ -1,0 +1,7 @@
+package {2};
+
+import {0}.base.ui.DE;
+
+public class {1}DE extends DE{
+
+}

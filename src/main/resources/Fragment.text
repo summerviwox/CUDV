@@ -1,0 +1,17 @@
+package {2};
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+
+import {0}.R;
+import {0}.base.ui.XActivity;
+import {0}.base.ui.XFragment;
+
+public class {1}{3} extends XFragment<{1}UI,{1}DE,{1}VA> {
+
+    public static {1}{3} goTo(Context context,Bundle bundle){
+        {1}{3} ft = new {1}{3}();
+        ft.getArguments().putAll(bundle);
+        return ft;
+    }
+}

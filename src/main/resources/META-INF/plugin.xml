@@ -1,15 +1,10 @@
 <idea-plugin>
     <id>com.summer.CUDV</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>CUDV</name>
+    <vendor email="summerviwox@gmail.com" url="www.summerviwox.com">summerviwox</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
+    <description>自动生成cudv</description>
 
-    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -18,7 +13,10 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="com.summer.cudv" class="com.summer.cudv" text="cudv" description="自动生成cudv四个文件">
+        <action id="com.summer.CUDVFT" class="com.summer.CUDVFT" text="CUDVFT" description="fragment自动生成cudv四个文件">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+        <action id="com.summer.CUDVAT" class="com.summer.CUDVAT" text="CUDVAT" description="activity自动生成cudv四个文件">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
         </action>
     </actions>

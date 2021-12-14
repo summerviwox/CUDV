@@ -1,0 +1,7 @@
+package {2};
+
+import {0}.base.ui.VA;
+
+public class {1}VA extends VA{
+
+}

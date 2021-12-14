@@ -1,0 +1,8 @@
+package {2};
+
+import {0}.base.ui.UI;
+import {0}.databinding.CustomerlistBinding;
+
+public class {1}UI extends UI<{1}Binding> {
+
+}
