@@ -37,7 +37,7 @@ public class Tool {
         createFile(new File(parent,"{1}VA.java".replace("{1}",dirName)),VAText);
 
         String XMLText = readResText(FileType.xml).replace("{0}",applicationName).replace("{1}",dirName).replace("{2}",packageName).replace("{3}",fileType==FileType.activity?"AT":"FT");
-        createFile(new File(parent,"{1}.xml".replace("{1}",dirName)),XMLText);
+        createFile(new File(parent,"{1}.xml".replace("{1}",dirName).toLowerCase()),XMLText);
     }
 
     private void createFile(File file,String text){
