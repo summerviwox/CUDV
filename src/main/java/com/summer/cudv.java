@@ -36,7 +36,7 @@ public class cudv extends AnAction {
                 "import {2}.base.ui.XActivity;\npublic class {0}CT extends XActivity<{0}UI,{0}DE,{0}VA> {\n\n\n}").replace("{0}",dirName).replace("{1}",packageName).replace("{2}",xpath);
         createFile(new File(parent,"{0}CT.java".replace("{0}",dirName)),CTText);
 
-        String UIText =  "package {0};\nimport {1}.base.ui.UI;\npublic class {2}UI extends UI<Ct{2}Binding> {\n}".replace("{0}",packageName).replace("{1}",xpath).replace("{2}",dirName);
+        String UIText =  "package {0};\nimport {1}.base.ui.UI;\nimport {1}.databinding.{2}Binding;\npublic class {2}UI extends UI<{2}Binding> {\n}".replace("{0}",packageName).replace("{1}",xpath).replace("{2}",dirName);
         createFile(new File(parent,"{0}UI.java".replace("{0}",dirName)),UIText);
 
         String DEText =  "package {0};\nimport {1}.base.ui.DE;\npublic class {2}DE extends DE{\n}".replace("{0}",packageName).replace("{1}",xpath).replace("{2}",dirName);
@@ -58,7 +58,7 @@ public class cudv extends AnAction {
                 "        xmlns:tools=\"http://schemas.android.com/tools\"\n" +
                 "        android:layout_width=\"match_parent\"\n" +
                 "        android:layout_height=\"match_parent\"\n" +
-                "        android:orientation=\"vertical\"\n" +
+                "        android:orientation=\"vertical\">\n" +
                 "    </LinearLayout>\n" +
                 "</layout>\n";
         xmlText = xmlText.replace("{0}",dirName);
